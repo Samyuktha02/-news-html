@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+body{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(images/wp3396909.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+   
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color:burlywood;
+    border-radius: 10px;
+}
+h2{
+    color: rgb(98, 88, 88);
+    font-size: 25px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email input{
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.button .btn{
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    background-color:rgb(106, 105, 105);
+    border-radius: 5px;
+    color: white;
+    transition: 300ms;
+}
+
+.btn:hover{
+    background-color:white;
+    color:rgb(120, 117, 117);
+    transition: .8s;
+    cursor: pointer;
+}
+
+@media screen and (min-width:250px) and (max-width:768px){
+    .container{
+        width: 100%;
+        display: flex;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+    .email input{
+        width:100%;
+    }
+}
+
